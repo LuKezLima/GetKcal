@@ -1,5 +1,5 @@
 body{
-background-color: rgb(104, 6, 104);
+background-color: rgb(68, 25, 68);
 }
 
 *{
@@ -19,7 +19,7 @@ background-color: rgb(104, 6, 104);
 }
 h1{
     color: #E74C3C;
-    
+    margin-bottom: 7%;
     font-size: 4em;
 }
 
@@ -32,8 +32,18 @@ button{
     background: linear-gradient(150deg, rgb(255, 37, 37) 0%, rgba(231, 143, 12, 0.842) 48%, rgb(51, 51, 25) 93%);
 }
 
+button:hover{
+    
+    transform: scale(1.05);
+    opacity: 1.4;
+    cursor: pointer;
+   
+}
+
 .caixa{
     width: 40vw;
+    margin: 0 auto;
+    
 }
 
 .form{
@@ -41,9 +51,69 @@ button{
     height: 3em;
     border-radius: 3%;
     margin-top: 20px;
-    opacity: 0.7;
+    opacity: 0.5;
+
+font-size: 1.2em;
 }
 
 h2{
     color: whitesmoke;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    padding-left: 3px;
+ }
+
+ select{
+     cursor: pointer;
+ }
+
+ .ab{
+    width: 30vw;
+    height: 3em;
+    border-radius: 3%;
+    margin-top: 20px;
+    opacity: 0.5;
+
+font-size: 1.2em;
+ }
+
+
+
+ @media (max-width: 1440px){
+     .container{
+         width: 80vw;
+     }
+     .caixa {
+         width: 80%;
+     }
+
+     .form{
+         width: 100%;
+        
+     }
+     
+ }
+
+
+ @media (max-width: 425px){
+   h1{
+    font-size: 3rem;
+   }
+
+   ::-webkit-input-placeholder {
+    font-size: 1rem;
+ }
+
+ button{
+     font-size: 0.6rem;
+ }
+
+ ap{
+    font-size: 20px;
+    background-color: tomato;
+ }
+
+    
 }
