@@ -11,8 +11,8 @@
 
 <body>
     <main class="container">
-        <h1> <svg style="bottom: 0;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80"
-                viewBox="0 0 172 172" style=" fill:#000000;">
+        <h1> <svg class="img" style="bottom: 0;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80"
+                height="80" viewBox="0 0 172 172" style=" fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                     stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                     font-family="none" font-weight="none" font-size="none" text-anchor="none"
@@ -32,35 +32,37 @@
                 </g>
             </svg> GetKcal
         </h1>
-
-        <select class="caixa ab" id="genero" name="genero">
-            <option disabled selected class="form">Selecione seu gênero</option>
+        <label for="gender">Sexo</label>
+        <select class="caixa ab" id="gender" name="genero">
             <option class="form" value="feminino">Feminino</option>
             <option class="form" value="masculino">Masculino</option>
         </select>
         <div class="caixa">
-
-            <input class="form a" type="text" placeholder="Digite sua idade">
+            <label for="age">Idade</label>
+            <input class="form a" type="number" id="age">
         </div>
         <div class="caixa">
-
-            <input class="form a" type="text" placeholder="Digite seu peso">
+            <label for="weight">Peso</label>
+            <input class="form a" type="number" id="weight">
         </div>
         <div class="caixa">
-
-            <input class="form a" type="text" placeholder="Digite sua altura em cm">
+            <label for="height">Altura</label>
+            <input class="form a" type="number" id="height">
         </div>
-
-        <select class="caixa ab" id="genero" name="genero">
-            <option disabled selected>Selecione seu nível de atividade física</option>
-            <option class="form ap" value="Leve">Leve</option>
-            <option class="form ap" value="masculino">Moderado</option>
-            <option class="form ap" value="masculino">Intenso</option>
+        <label for="fisics">Nível de atividade física</label>
+        <select class="caixa ab" id="fisics" name="genero">
+            <option class="form ap" value="1.2">Sedentário</option>
+            <option class="form ap" value="1.375">Pouca atividade</option>
+            <option class="form ap" value="1.55">Atividade moderada</option>
+            <option class="form ap" value="1.725">Atividade intensa</option>
+            <option class="form ap" value="1.9">Atividade muito intensa</option>
         </select>
         <button type="button">
             <h2>CONFIRMAR</h2>
         </button>
     </main>
+
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
