@@ -114,7 +114,7 @@ header {
 
 @media (max-width: 425px){
     .container{
-      width: 80vw;
+      width: 90vw;
     }
 
     .form-group label {
