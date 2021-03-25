@@ -53,8 +53,8 @@ function handleSubmit(event) {
     const result = document.getElementById('result')
 
 
-    if (weight == 0 || height == 0 || age == 0) {
-        alert("Campos vazios")
+    if (weight <= 0 || height <= 0 || age <= 0) {
+        alert("Campos vazios ou valores negativos")
     } else {
         result.innerHTML = layout // Atribui ao Html a variavel
     }
